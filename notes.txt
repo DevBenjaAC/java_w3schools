@@ -1,1 +1,21 @@
 Hi, in this repo i write notes of java.
+
+Para verificar la version de java instalada 
+    java -version
+
+Las { } marcan el principio y el final de unbloque de codigo.
+System.out.println es un metodo para imprimir una cosa en la pantalla.
+
+Cada instruccion de codigo debe terminar con ;
+
+Cuando trabajas con texto se usan ""
+    De lo contrario se producira un error
+
+print() vs println
+    La diferencia es que print no da un salto de linea
+    println facilita la lectura del codigo
+
+Tambien se pueden usar numeros en println 
+    La diferencia es que no se usan ""
+
+
