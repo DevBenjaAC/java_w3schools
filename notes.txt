@@ -18,4 +18,97 @@ print() vs println
 Tambien se pueden usar numeros en println 
     La diferencia es que no se usan ""
 
+System.out.println(5*8);
+
+ //this is a comment in line 
+        
+/*esto seria un comentario
+de bloque que comienza en una linea y termina en otra */
+
+
+Tipos de variables 
+
+    Tipos de datos primitivos: incluye byte, short, int, long, float, doubleybooleanchar
+    Tipos de datos no primitivos, como String, Arrays y Classes
+
+String- almacena texto, como "Hola". Los valores de cadena están entre comillas dobles
+int- almacena enteros (números enteros), sin decimales, como 123 o -123
+float- almacena números de coma flotante, con decimales, como 19.99 o -19.99
+char- almacena caracteres individuales, como 'a' o 'B'. Los valores de char están entre comillas simples
+boolean- almacena valores con dos estados: verdadero o falso
+
+type variableName = value;
+    Int edad = 27;
+    String name = "Edgar Benjamin";
+
+    si quieres que otras personas no puedan modificar tu variable
+        asigna final antes de el tipo de variable para volverla final o constante
+        y con esto evitar que se reescribir el valor.
+
+int a = 1, b = 2, c = 3, d = 4; 
+    // con esto puedes escribir en una sola lista en linea todas las variables usando ,.
+
+Concatenacion:
+
+    println se usa normalmente para imprimir el valor una variable
+        se puede combinar con texto.
+        String name = "Edgar Benjamin";
+        System.out.println("hola " + name);
+
+    Tambien se puede usar una variable con otra con +
+        String name = "Edgar Benjamin";
+        String lastName = "Alvarado Cisneros";
+        System.out.println(name + " " + lastName);  //el " " es un espacio 
+        String fullName = "name + lastName";
+        System.out.println(fullName);
+    
+    Para valores numericos: 
+    int x = 2;
+    int y = 3;
+    System.out.println(x + y); 
+    // x almacena el valor 2 & y almacena el valor 3
+    + funciona como un operador matematico
+
+    Se pueden convertir el valor de una variable tipo double de 
+    a entero asi: 
+        double myDouble = 9.78d;
+        int myInt = (int) myDouble;
+    
+    Un valor para multiples variables:
+    int x, y, z;
+    x = y = z = 50;
+    System.out.println(x + y + z);
+    //El resultado es 150
+
+    Nota: Se recomienda utilizar nombres descriptivos para crear un código comprensible y mantenible
+
+Operadores
+    int sum1 = 100 + 50;        // 150 (100 + 50)
+    int sum2 = sum1 + 250;      // 400 (150 + 250)
+    int sum3 = sum2 + sum2;     // 800 (400 + 400)
+
+    ++ Incremento
+    -- Decremento
+
+Asignacion de suma 
+    int cantidad = 10;
+    cantidad += 20;
+    System.out.println(cantidad);
+    //El resultado sera 30
+
+Comparacion
+    > mayor que 
+    < menor que 
+    == igual a 
+    != diferente (negacion de igual o no igual)
+    >= mayor o igual
+    <= menor o igual
+
+        El valor de retorno de una comparacion 
+            es true (true) o false (false).
+
+Operadores logicos
+    && and (y)
+    || or (o)
+    !  not (negacion o lo contrario)
 
