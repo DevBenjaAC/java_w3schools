@@ -112,3 +112,37 @@ Operadores logicos
     || or (o)
     !  not (negacion o lo contrario)
 
+Math.random
+    Math.random()devuelve un número aleatorio entre 0,0 (inclusive) y 1,0 (exclusivo):
+
+    formula para obtener un numero random de 0 a 100
+     int randomNum = (int)(Math.random() * 101);  // 0 to 100
+    formula para obtener un numero random de 0 a 1000
+     int randomNum = ((Math.random() * 1000);  // 0 to 1000
+
+Expresiones booleanas
+    true false
+
+    Java tiene las siguientes declaraciones condicionales:
+
+    Úselo ifpara especificar un bloque de código que se ejecutará, si una condición especificada es verdadera
+    Se usa elsepara especificar un bloque de código a ejecutar, si la misma condición es falsa
+    Úselo else ifpara especificar una nueva condición para probar, si la primera condición es falsa
+    Úselo switchpara especificar muchos bloques alternativos de codigo para ejecutar.
+
+    int time = 22;
+    if (time < 10) {
+    System.out.println("Good morning.");
+    } else if (time < 18) {
+    System.out.println("Good day.");
+    } else {
+    System.out.println("Good evening.");
+    }
+    // Outputs "Good evening."
+
+Operador Terniario
+
+    int time = 22;
+    String saludoDelDia = (time <= 18) ? "Have a Good Day " : "Have a Good night";
+    System.out.println(saludoDelDia);
+    
