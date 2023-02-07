@@ -145,4 +145,112 @@ Operador Terniario
     int time = 22;
     String saludoDelDia = (time <= 18) ? "Have a Good Day " : "Have a Good night";
     System.out.println(saludoDelDia);
+
+
+Switch 
+    int day = 4;
+    switch (day) {
+    case 6:
+        System.out.println("Today is Saturday");
+        break;
+    case 7:
+        System.out.println("Today is Sunday");
+        break;
+    default:
+        System.out.println("Looking forward to the Weekend");
+    }
+    // Outputs "Looking forward to the Weekend"
+
+while
+    //un while siempre se ejecutara siempre y cuando la condicion sea true.
+
+
+    while(condition){
+        //se ejecutara el codigo
+    }
+
+Do while 
+    //Es una variante del while condition pero se ejecutara el codigo una vez y despues preguntara.
+
+    do(condition){
+        //se ejecutara el codigo
+    }
+    while(condicion); //aqui preguntara pero ya se habra ejecutado una vez al menos.
+
+for 
+    //cuando sepas cuantas veces deseas recorrer el bloque de codigo , usa for en lugar de while.
+
+    for(statement 1, statement 2, statement 3){
+        //se ejecutara el codigo hasta que la condicion no se cumpla.
+    }
+
+    //La declaracion 1 vez antes de la ejecución del bloque de codigo.
+    //La declaracion 2 define la ejecucion para ejecutar el bloque de codigo.
+    //La declaracion 3 aumenta el valor (i++) cada que se ejecuta el codigo en el ciclo.
+
+    for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+    }
+    for (int i = 0; i <= 10; i = i + 2) {
+    System.out.println(i);
+    }
+
+Bucles anidados.
+    //Es posible colocar un bucle dentro de otro bucle , esto es un bucle anidado.
+    ''El bucle interno''  se ejecutara una vez por cada iteracion del ''bucle externo''.
+
+    // Outer loop
+    for (int i = 1; i <= 2; i++) {
+    System.out.println("Outer: " + i); // Executes 2 times
     
+    // Inner loop
+    for (int j = 1; j <= 3; j++) {
+        System.out.println(" Inner: " + j); // Executes 6 times (2 * 3)
+    }
+    } 
+
+For each.
+    //for each se usa para recorrer una matriz.
+    for (type variableName : arrayName) {
+    // code block to be executed
+    }
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars) {
+    System.out.println(i);
+    }
+
+//breke en un for
+    for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+            }
+
+//continue en un if 
+    for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+        continue;
+    }
+    System.out.println(i);
+    }
+//breake en un while
+    int i = 0;
+    while (i < 10) {
+    System.out.println(i);
+    i++;
+    if (i == 4) {
+        break;
+    }
+    }
+
+//continue en un if anidado dentro de un while
+    int i = 0;
+    while (i < 10) {
+    if (i == 4) {
+        i++;
+        continue;
+    }
+    System.out.println(i);
+    i++;
+    }
